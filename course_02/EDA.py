@@ -187,5 +187,7 @@ print(iris["species"].value_counts())
 
 #2D Density plot, contors-plot
 iris_setosa = iris.loc[iris["species"] == "setosa"]
+iris_virginica = iris.loc[iris["species"] == "virginica"]
+iris_versicolor = iris.loc[iris["species"] == "versicolor"]
 sns.jointplot(x="petal_length", y="petal_width", data=iris_setosa, kind="kde")
 plt.show()
